@@ -30,7 +30,13 @@ module.exports = (env) => {
                     loader: 'babel-loader',
                     exclude: /node_modules/,
                     query: config.tasks.js.babel
-                }]
+                }],
+                loaders: [
+                    {
+                        test: require.resolve('snapsvg'),
+                        loader: 'imports-loader?this=>window,fix=>module.exports=0'
+                    }
+                ]
             }
         };
 

@@ -38,6 +38,7 @@
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
+    "imports-loader": "^0.7.1",
     "lodash": "^4.16.4",
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
@@ -55,6 +56,7 @@
     "classnames": "^2.2.5",
     "normalize.css": "^7.0.0",
     "react-render-html": "^0.1.6",
+    "snapsvg": "^0.5.1",
     "svgxuse": "^1.1.22"
   },
   "scripts": {
