@@ -95,11 +95,11 @@ Not all configuration is exposed here. For advanced task configuration, you can 
 A `README.md` with details about each asset type are available in their respective folders in the `src` directory:
 
 - [JavaScript](src/js)
-- [Stylesheets](src/sass)
+- [Stylesheets](src/assets/sass)
 - [HTML](src/templates)
-- [Images](src/images)
-- [SVG Sprite](src/symbols)
-- [Static Files (favicons, app icons, etc.)](src/static)
+- [Images](src/assets/images)
+- [SVG Sprite](src/assets/symbols)
+- [Static Files (favicons, app icons, etc.)](src/assets/static)
 
 This will compile revisioned and compressed files to `./build`. 
 

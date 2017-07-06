@@ -16,13 +16,13 @@ module.exports = {
         },
 
         'static': {
-            'src': 'static',
+            'src': 'assets/static',
             'dest': './',
             'extensions': ['*']
         },
 
         'js': {
-            'src': 'js',
+            'src': '.',
             'dest': 'js',
             'entries': {
                 'app': ['./app.js']
@@ -36,8 +36,8 @@ module.exports = {
         },
 
         'css': {
-            'src': 'sass',
-            'dest': 'css',
+            'src': 'assets/sass',
+            'dest': 'assets/css',
             'sass': {
                 'includePaths': [
                     './node_modules'
@@ -46,26 +46,15 @@ module.exports = {
             'extensions': ['scss', 'css']
         },
 
-        'templates': {
-            'src': 'templates',
-            'dest': './',
-            'dataFile': 'data/global.json',
-            'htmlmin': {
-                'collapseWhitespace': true
-            },
-            'extensions': ['njk', 'json'],
-            'excludeFolders': ['layouts', 'shared', 'macros', 'data']
-        },
-
         'images': {
-            'src': 'images',
-            'dest': 'images',
+            'src': 'assets/images',
+            'dest': 'assets/images',
             'extensions': ['jpg', 'png', 'svg', 'gif']
         },
 
         'svgSprite': {
-            'src': 'symbols',
-            'dest': 'images',
+            'src': 'assets/symbols',
+            'dest': 'assets/images',
             'extensions': ['svg']
         },
 
@@ -74,12 +63,12 @@ module.exports = {
         },
 
         'eslint': {
-            'src': 'js',
-            'extensions': ['js', 'json']
+            'src': '.',
+            'extensions': ['json']
         },
 
         'stylelint': {
-            'src': 'sass',
+            'src': 'assets/sass',
             'extensions': ['scss', 'css']
         }
     }

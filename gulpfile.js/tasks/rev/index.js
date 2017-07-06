@@ -14,8 +14,6 @@ const
             'rev-update-references',
             // 3) Rev and compress CSS and JS files (this is done after assets, so that if a referenced asset hash changes, the parent hash will change as well
             'rev-css',
-            // 4) Update asset references in HTML
-            'update-html',
             cb
         );
     };

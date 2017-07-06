@@ -4,7 +4,7 @@ const
     path = require('path'),
     watch = require('gulp-watch'),
     watchTask = () => {
-        const watchableTasks = ['images', 'svgSprite', 'templates', 'css', 'eslint', 'stylelint', 'static'];
+        const watchableTasks = ['images', 'svgSprite', 'css', 'eslint', 'stylelint', 'static'];
 
         watchableTasks.forEach((taskName) => {
             const task = config.tasks[taskName];
@@ -17,5 +17,5 @@ const
         });
     };
 
-gulp.task('watch', ['browserSync'], watchTask);
+gulp.task('watch', watchTask);
 module.exports = watchTask;
