@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Main from './components/routing/main';
 import Header from './components/header';
+import LBOne from './components/leaves/LBOne';
+import LBTwo from './components/leaves/LBTwo';
+import RBOne from './components/leaves/RBOne';
+import RBTwo from './components/leaves/RBTwo';
+import LOOne from './components/leaves/LOOne';
+import LOTwo from './components/leaves/LOTwo';
 
 class App extends Component {
   render() {
@@ -15,6 +21,18 @@ class App extends Component {
         </p>
         <Header />
         <Main />
+          <div className="LB">
+              <LBOne />
+              <LBTwo />
+          </div>
+          <div className="LO">
+              <LOOne />
+              <LOTwo />
+          </div>
+          <div className="RB">
+              <RBOne />
+              <RBTwo />
+          </div>
       </div>
     );
   }
