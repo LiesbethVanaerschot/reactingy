@@ -7,6 +7,9 @@ import RBOne from './components/leaves/RBOne';
 import RBTwo from './components/leaves/RBTwo';
 import LOOne from './components/leaves/LOOne';
 import LOTwo from './components/leaves/LOTwo';
+import ROOne from './components/leaves/ROOne';
+import ROTwo from './components/leaves/ROTwo';
+import ROThree from './components/leaves/ROThree';
 
 class App extends Component {
   render() {
@@ -32,6 +35,11 @@ class App extends Component {
           <div className="RB">
               <RBOne />
               <RBTwo />
+          </div>
+          <div className="RO">
+            <ROOne/>
+            <ROTwo/>
+            <ROThree/>
           </div>
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import KUTE from 'kute.js';
-require('kute.js/kute-svg');
+// import KUTE from 'kute.js';
+// require('kute.js/kute-svg');
 
 const svgStyle = {
     enableBackground:"new 0 0 161.6 159.7"

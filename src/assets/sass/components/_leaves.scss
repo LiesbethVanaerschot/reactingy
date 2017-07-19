@@ -116,18 +116,22 @@
     animation: wiggle_two 10s 5s ease-in-out infinite alternate; /* IE 10+, Fx 29+ */
 }
 
-.LO1 {
+.LO1,
+.RO1 {
     fill: #172E57;
     opacity: 0.5;
     transform: translate3d(2px,1px,0);
 }
 
-.LO1_End {
+.LO1_End,
+.RO1_End,
+.RO2_End {
     fill: #197A48;
     opacity: 0.6;
 }
 
-.LO1_root {
+.LO1_root,
+.RO1_root {
     fill: #57BD7F;
     opacity: 0.6;
     transform: translate3d(3px, 0, 0);
@@ -138,6 +142,71 @@
     bottom: -20px;
     left: 100px;
     transform: scale(2.2) rotate(-4deg);
+}
+
+/*rechtsonder*/
+
+.RO {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.RO1_svg,
+.RO2_svg,
+.RO3_svg {
+    position: absolute;
+}
+
+.RO1_svg {
+    right: -20px;
+    bottom: 380px;
+    z-index: 10;
+    transform: scale(1.5);
+
+    transform-origin: 15% 85%;
+    transition:transform 2s ease-in-out 0s;
+
+    animation: wiggle_three 10s 5s ease-in-out infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+.RO2_svg {
+    right: -10px;
+    bottom: 240px;
+    z-index: 5;
+    transform: scale(1.8);
+}
+
+.RO3_svg {
+    right: 80px;
+    bottom: -40px;
+    transform: scale(2.2) rotate(8deg);
+}
+
+.RO2 {
+    fill: #91A43A;
+    opacity: .6;
+    transform: translate3d(2px,1px,0);
+}
+
+.RO2_root {
+    fill: #99B279;
+    opacity: .6;
+}
+
+.RO3_End,
+.RO3 {
+    fill: #2F9575;
+    opacity: .6;
+}
+
+.RO3 {
+    transform: translate3d(2px,1px,0);
+}
+
+.RO3_root {
+    fill: #85BD7E;
+    opacity: .6;
 }
 
 /*keyframes*/
@@ -198,4 +267,33 @@
     50%   { transform: rotate(0deg) scale(2); }
     75%   { transform: rotate(-2deg) scale(2); }
     100%   { transform: rotate(0deg) scale(2); }
+}
+
+@-webkit-keyframes wiggle_three {
+    0%   { transform: rotate(0deg) scale(1.4); }
+    25% { transform: rotate(2deg) scale(1.4); }
+    50%   { transform: rotate(0deg) scale(1.4); }
+    75%   { transform: rotate(-2deg) scale(1.4); }
+    100%   { transform: rotate(0deg) scale(1.4); }
+}
+@-moz-keyframes wiggle_three {
+    0%   { transform: rotate(0deg) scale(1.4); }
+    25% { transform: rotate(2deg) scale(1.4); }
+    50%   { transform: rotate(0deg) scale(1.4); }
+    75%   { transform: rotate(-2deg) scale(1.4); }
+    100%   { transform: rotate(0deg) scale(1.4); }
+}
+@-o-keyframes wiggle_three {
+    0%   { transform: rotate(0deg) scale(1.4); }
+    25% { transform: rotate(2deg) scale(1.4); }
+    50%   { transform: rotate(0deg) scale(1.4); }
+    75%   { transform: rotate(-2deg) scale(1.4); }
+    100%   { transform: rotate(0deg) scale(1.4); }
+}
+@keyframes wiggle_three {
+    0%   { transform: rotate(0deg) scale(1.4); }
+    25% { transform: rotate(2deg) scale(1.4); }
+    50%   { transform: rotate(0deg) scale(1.4); }
+    75%   { transform: rotate(-2deg) scale(1.4); }
+    100%   { transform: rotate(0deg) scale(1.4); }
 }
