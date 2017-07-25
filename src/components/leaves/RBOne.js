@@ -19,7 +19,7 @@ class RBOne extends Component {
 
     render() {
         return (
-            <svg version="1.1" id="Layer_1" x="0px" y="0px" className="RB1_svg" width="233.7px" height="280px" viewbox="0 0 233.7 280" style={svgStyle}>
+            <svg version="1.1" id="Layer_1" x="0px" y="0px" className="RB1_svg" width="233.7px" height="280px" viewBox="0 0 233.7 280" style={svgStyle}>
                 <path ref="RB1" className="RB1" d="M89.1,254.1c-9.4-25.3-14.6-55.1-20.7-74.3
 	c3,28.2,7.6,54.6,15.1,82.1C74.1,238,70.3,220.8,66,195.7c-2.4,24.9,10.8,45,12.1,71.2c-6.5-30-14.2-45.1-16.2-63.7
 	c-3.8,9,11.5,48.1,9.7,58.3c-3-8.6-1.4-13.5-12.7-44.4c-0.4,3.5,4,25.3,8.1,40.9c-5.8-13.2-8.3-23.6-9.7-33.3

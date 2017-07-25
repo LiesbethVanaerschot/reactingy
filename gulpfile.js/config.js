@@ -21,6 +21,12 @@ module.exports = {
             'extensions': ['*']
         },
 
+        'fonts': {
+            'src': 'assets/fonts',
+            'dest': 'assets/fonts',
+            'extensions': ['*']
+        },
+
         'js': {
             'src': '.',
             'dest': 'js',

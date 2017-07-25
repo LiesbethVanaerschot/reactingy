@@ -1,8 +1,21 @@
 .LB {
     position: fixed;
-    left: -100px;
+    left: -180px;
     top: -60px;
-    transform: rotate(6.5deg);
+    z-index: -10;
+    transform: rotate(6.5deg) scale(0.9);
+
+    transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
+
+    @media( min-width: $breakpoint--sm) {
+        transform: rotate(6.5deg) scale(1.1);
+        left: -140px;
+    }
+
+    @media( min-width: $breakpoint--md) {
+        transform: rotate(6.5deg) scale(1.2);
+        left: -100px
+    }
 }
 
 .LB1_svg {
@@ -14,7 +27,7 @@
 .LB1,
 .RB1 {
     opacity: 0.6;
-    fill: #235672;
+    fill: get-brand-color('blauw');
     enable-background: new;
     transform: translate3d(2px,2px,0);
 }
@@ -22,14 +35,14 @@
 .LB1_End,
 .RB1_End {
     opacity: 0.6;
-    fill: #2F9575;
+    fill: get-brand-color('munt');
     enable-background: new;
 }
 
 .LB1_root,
 .RB1_root {
     opacity: 0.5;
-    fill: #7CC471;
+    fill: get-brand-color('groen','lighter');
 }
 
 .LB2_svg {
@@ -47,7 +60,7 @@
 .RB2,
 .LO2 {
     opacity: 0.4;
-    fill: #2F9754;
+    fill: get-brand-color();
     transform: translate3d(2px,1px,0);
 }
 
@@ -55,14 +68,14 @@
 .RB2_End,
 .LO2_End {
     opacity: 0.5;
-    fill: #2F9575;
+    fill: get-brand-color('munt');
 }
 
 .LB2_root,
 .RB2_root,
 .LO2_root {
     opacity: 0.6;
-    fill: #85BD7E;
+    fill: get-brand-color('groen', 'light');
 }
 
 /*rechtsboven*/
@@ -70,8 +83,27 @@
 .RB {
     position: fixed;
     top: -50px;
-    right: 0;
-    z-index: 10;
+    right: -140px;
+    z-index: -10;
+
+    transform: scale(0.8);
+
+    transition: transform 0.5s ease-in-out, right 0.5s ease-in-out;
+
+    @media( min-width: $breakpoint--sm) {
+        transform: scale(0.9);
+        right: -110px;
+    }
+
+    @media( min-width: $breakpoint--md) {
+        transform: scale(1);
+        right: -20px;
+    }
+
+    @media( min-width: $breakpoint--lg) {
+        transform: scale(1.2);
+        right: 20px;
+    }
 }
 
 .RB1_svg {
@@ -88,7 +120,7 @@
     top: 20px;
     right: 0;
 
-    transform: scale(1.6) rotate(-25deg);
+    transform: scale(1.8) rotate(-25deg);
 }
 
 .RB1_root {
@@ -100,7 +132,27 @@
 .LO {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: -100px;
+    z-index: -10;
+
+    transform: scale(0.8);
+
+    transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
+
+    @media( min-width: $breakpoint--sm) {
+        transform: scale(0.9);
+        left: -50px;
+    }
+
+    @media( min-width: $breakpoint--md) {
+        transform: scale(1);
+        left: 0;
+    }
+
+    @media( min-width: $breakpoint--lg) {
+        transform: scale(1.1);
+        left: 0;
+    }
 }
 
 .LO1_svg {
@@ -118,7 +170,7 @@
 
 .LO1,
 .RO1 {
-    fill: #172E57;
+    fill: get-brand-color('blauw','dark');
     opacity: 0.5;
     transform: translate3d(2px,1px,0);
 }
@@ -126,13 +178,13 @@
 .LO1_End,
 .RO1_End,
 .RO2_End {
-    fill: #197A48;
+    fill: get-brand-color('groen','dark');
     opacity: 0.6;
 }
 
 .LO1_root,
 .RO1_root {
-    fill: #57BD7F;
+    fill: get-brand-color('munt','lighter');
     opacity: 0.6;
     transform: translate3d(3px, 0, 0);
 }
@@ -148,8 +200,23 @@
 
 .RO {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: -100px;
+    bottom: -40px;
+    z-index: -10;
+
+    transform: scale(0.8);
+
+    transition: transform 0.5s ease-in-out, right 0.5s ease-in-out;
+
+    @media( min-width: $breakpoint--sm) {
+        transform: scale(0.9);
+        right: -50px;
+    }
+
+    @media( min-width: $breakpoint--md) {
+        transform: scale(1);
+        right: 0;
+    }
 }
 
 .RO1_svg,
@@ -184,19 +251,19 @@
 }
 
 .RO2 {
-    fill: #91A43A;
+    fill: get-brand-color('mos');
     opacity: .6;
     transform: translate3d(2px,1px,0);
 }
 
 .RO2_root {
-    fill: #99B279;
+    fill: get-brand-color('mos','lighter');
     opacity: .6;
 }
 
 .RO3_End,
 .RO3 {
-    fill: #2F9575;
+    fill: get-brand-color('munt');
     opacity: .6;
 }
 
@@ -205,7 +272,7 @@
 }
 
 .RO3_root {
-    fill: #85BD7E;
+    fill: get-brand-color('groen','light');
     opacity: .6;
 }
 
