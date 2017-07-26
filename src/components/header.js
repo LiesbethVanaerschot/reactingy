@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
     render () {
         return (
-            <header>
-                <nav>
-                    <ul>
-                        <li><Link to='/about'>About</Link></li>
-                        <li><Link to='/work'>Work</Link></li>
-                        <li><Link to='/contact'>Contact</Link></li>
-                    </ul>
+            <header className="main-header">
+                <a href="/" className="main-header__logo">
+                    <img src="assets/images/logo.svg" alt="logo liesbeth vanaerschot" className="main-header__img"/>
+                </a>
+                <nav className="main-header__nav">
+                    <Link className="main-header__link" to='/about'>About</Link>
+                    <Link className="main-header__link" to='/work'>Work</Link>
+                    <Link className="main-header__link" to='/contact'>Contact</Link>
                 </nav>
             </header>
         )

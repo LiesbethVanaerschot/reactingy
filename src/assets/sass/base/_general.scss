@@ -33,14 +33,17 @@ body {
     background-color: get-brand-color();
 }
 
+main {
+    overflow-x: hidden;
+}
+
 a {
     transition: color 0.2s ease-out;
     text-decoration: none;
-    color: get-brand-color();
+    color: get-gray-color('darker');
 
     &:hover, &:focus {
-        color: get-brand-color('groen', 'dark');
-        text-decoration: underline;
+        color: get-gray-color('dark');
     }
 
     &.link-unstyled {

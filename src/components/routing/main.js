@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Header from './../header';
 import About from '../../pages/about';
-import Home from '../../pages/home';
+import Greeting from '../greeting';
 
 class Main extends Component {
     render() {
         return (
             <main>
-                <Switch>
-                    <Route exact path='/' component={Home}/>
-                    <Route exact path='/about' component={About}/>
-                </Switch>
+                <Header/>
+                {/*<Switch>*/}
+                    {/*<Route exact path='/about' component={About}/>*/}
+                {/*</Switch>*/}
+                <div className="content">
+                    <Greeting />
+                    <About/>
+                </div>
             </main>
         )
     }
