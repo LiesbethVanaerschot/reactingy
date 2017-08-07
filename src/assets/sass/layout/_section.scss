@@ -3,7 +3,7 @@ $l: "section";
 .#{$l}--triangle {
     position: relative;
 
-    max-width: 1600px;
+    max-width: 3000px;
     margin: 110px auto 350px auto;
 
     &:before,
@@ -17,8 +17,8 @@ $l: "section";
         width: 0;
         height: 0;
 
-        border-left: 800px solid transparent;
-        border-right: 800px solid transparent;
+        border-left: 1500px solid transparent;
+        border-right: 1500px solid transparent;
 
 
         transform: translate3d(-50%,0,0);

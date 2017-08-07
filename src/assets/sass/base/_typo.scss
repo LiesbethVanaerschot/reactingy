@@ -52,20 +52,22 @@ h2 {
 }
 
 h3 {
-    margin: 2rem 0 1rem 0;
+    margin: 20px 0;
 
-    font-size: 2.5rem;
+    font-size: 25px;
     font-family: $secondary-font--italic;
     text-transform: uppercase;
     font-weight: 200;
 }
 
 h4 {
+    margin: 10px 0;
+
     color: $text-color;
     text-transform: uppercase;
     font-weight: 200;
     font-family: $primary-font;
-    font-size: 1.8rem;
+    font-size: 18px;
 }
 
 p + p {

@@ -84,15 +84,25 @@ button {
     opacity: 0.9;
 }
 
-.container--small {
+.container {
     position: relative;
 
-    max-width: 40rem;
+    max-width: 768px;
     width: 100% !important;
     margin: 0 auto;
     padding: 0 1.5rem;
 
+    &--small {
+        @extend .container;
+
+        max-width: 500px;
+    }
+
     @media (min-width: $breakpoint--md) {
-        max-width: 60rem;
+        max-width: 1200px;
+
+        &--small {
+            max-width: 600px;
+        }
     }
 }

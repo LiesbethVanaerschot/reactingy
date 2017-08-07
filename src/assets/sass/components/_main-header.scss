@@ -4,7 +4,7 @@
 /* General
    ========================================================================== */
 
-$b : 'main-header';
+$b : 'mainheader';
 
 .#{$b} {
     position: fixed;
@@ -16,24 +16,28 @@ $b : 'main-header';
 
     background-color: transparent;
 
-    transition: all 1.5s ease-in-out;
+    transition: all 1s ease-in-out;
 
     &.bgfade {
         height: 40px;
         padding: 5px 20px;
 
-        background-color: rgba(get-gray-color('lightest'), .7);
+        background-color: rgba(get-gray-color('light'), .7);
 
-        .#{$b}__logo__img {
+        .#{$b}__img {
             width: 20px;
+
+            transition: width 1s ease-in-out;
 
             @media (min-width: $breakpoint--sm) {
                 width: 25px;
             }
         }
 
-        .#{$b}__nav__link {
+        .#{$b}__link {
             padding: 4px 6px;
+
+            transition: padding 1s ease-in-out;
 
             @media (min-width: $breakpoint--sm) {
                 padding: 6px 10px;

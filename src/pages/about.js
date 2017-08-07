@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import data from './data/about.json';
+import Skills from './../components/skills';
+import Extras from './../components/extras';
 
 class About extends Component {
     render () {
@@ -8,13 +10,13 @@ class About extends Component {
                 <div className="container--small">
                     <div className="section__content">
                         <div className="section__header text--center">
-                            <h2 className="section__title">About</h2>
+                            <h2 className="section__title">{data.title}</h2>
                         </div>
                         <p className="section__text">
-                            I am a 28 year old all-round creative based in Antwerp, Belgium.
-                            After my education as an interior designer,
-                            I have been developing a passion for the web.
+                            {data.text}
                         </p>
+                        <Skills/>
+                        <Extras/>
                     </div>
                 </div>
             </div>
